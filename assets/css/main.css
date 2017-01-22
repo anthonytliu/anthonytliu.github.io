@@ -863,6 +863,7 @@
 		}
 
 			#thumbnails article .thumbnail {
+				pointer-events: none;
 				-webkit-tap-highlight-color: transparent;
 				display: block;
 				position: relative;
@@ -871,6 +872,7 @@
 			}
 
 				#thumbnails article .thumbnail img {
+					pointer-events: none;
 					display: block;
 					width: 100%;
 				}
@@ -919,6 +921,7 @@
 
 	@-moz-keyframes spinner {
 		0% {
+			pointer-events: none;
 			-moz-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
 			-ms-transform: rotate(0deg);
@@ -926,6 +929,7 @@
 		}
 
 		100% {
+			pointer-events: none;
 			-moz-transform: rotate(360deg);
 			-webkit-transform: rotate(360deg);
 			-ms-transform: rotate(360deg);
@@ -935,6 +939,7 @@
 
 	@-webkit-keyframes spinner {
 		0% {
+
 			-moz-transform: rotate(0deg);
 			-webkit-transform: rotate(0deg);
 			-ms-transform: rotate(0deg);
@@ -982,6 +987,7 @@
 	}
 
 	#viewer {
+		pointer-events: none;
 		-moz-transition: opacity 0.75s ease, width 0.75s ease;
 		-webkit-transition: opacity 0.75s ease, width 0.75s ease;
 		-ms-transition: opacity 0.75s ease, width 0.75s ease;
@@ -1010,7 +1016,7 @@
 				-moz-pointer-events: auto;
 				-webkit-pointer-events: auto;
 				-ms-pointer-events: auto;
-				pointer-events: auto;
+				pointer-events: none;
 			}
 
 			#viewer .inner:before {
