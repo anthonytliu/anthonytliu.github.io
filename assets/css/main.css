@@ -863,7 +863,6 @@
 		}
 
 		#thumbnails article .thumbnail {
-			pointer-events: none;
 			-webkit-tap-highlight-color: transparent;
 			display: block;
 			position: relative;
@@ -872,7 +871,6 @@
 		}
 
 		#thumbnails article .thumbnail img {
-			pointer-events: none;
 			display: block;
 			width: 100%;
 		}
@@ -921,7 +919,7 @@
 
 		@-moz-keyframes spinner {
 			0% {
-				pointer-events: none;
+
 				-moz-transform: rotate(0deg);
 				-webkit-transform: rotate(0deg);
 				-ms-transform: rotate(0deg);
@@ -929,7 +927,7 @@
 			}
 
 			100% {
-				pointer-events: none;
+
 				-moz-transform: rotate(360deg);
 				-webkit-transform: rotate(360deg);
 				-ms-transform: rotate(360deg);
