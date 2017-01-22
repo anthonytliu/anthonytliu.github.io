@@ -844,6 +844,7 @@
 /* Thumbnails */
 
 	#thumbnails {
+		pointer-events: none;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -863,6 +864,7 @@
 		}
 
 			#thumbnails article .thumbnail {
+				pointer-events: none;
 				-webkit-tap-highlight-color: transparent;
 				display: block;
 				position: relative;
@@ -871,6 +873,7 @@
 			}
 
 				#thumbnails article .thumbnail img {
+					pointer-events: none;
 					display: block;
 					width: 100%;
 				}
