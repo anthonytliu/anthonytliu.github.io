@@ -1,3 +1,8 @@
+:root {
+    --silver: #acacac;
+    --grey: #e4e4e4;
+    --yellow: #ffe733;
+}
 html{
     font-size: 100%;
 }
@@ -6,20 +11,8 @@ a:link{
     text-decoration: none;
 }
 
-.contentContainer{
-    width: 50%;
-    padding: 0.5rem;
-    background-color: blue;
-}
-
-.navText {
-    font-size: 3em;
-    font-family: Garamond;
-    background-color: transparent;
-}
-
 .container{
-    width: 50%;
+    width: 70%;
     padding: 0.7rem;
 }
 
@@ -28,25 +21,51 @@ a:link{
     margin-bottom: 1.5rem;
 }
 
+.navContainer{
+    justify-content: center;
+    padding: 1vw;
+}
+
 #nameHeader {
     font-family: Sailec;
-    font-size: 1.5rem;
+    font-size: clamp(15px, 1.5vw, 45px);
     text-decoration: none;
-    color: grey;
+    color: var(--silver);
+}
+
+.page-title {
+    position: relative;
+    width: max-content;
+}
+
+.page-content-list {
+    list-style: none;
+    font-style: italic;
+    padding: 0.7rem;
+    width: 50%;
+}
+
+.fixed-page-highlight{
+    background-image: linear-gradient(180deg, transparent 65%, var(--yellow) 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: black;
+    font-size: clamp(35px, 4vw, 65px);
+    line-height: 1.15em;
+    text-decoration: none;
+    font-family: Sentinel;
 }
 
 .main-page-highlight{
-    background-image: linear-gradient(180deg, transparent 65%, #fcf113 0);
-    /* background-position: -0% 0%; */
+    background-image: linear-gradient(180deg, transparent 65%, var(--yellow) 0);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     color: black;
-    font-size: 3em;
+    font-size: clamp(35px, 4vw, 65px);
     line-height: 1.15em;
     text-decoration: none;
     transition: background-size 0.4s ease-out;
     font-family: Egyptienne;
-    /* display: absolute; */
 }
 
 .main-page-highlight:hover{
@@ -54,11 +73,47 @@ a:link{
     cursor: pointer;
 }
 
-#footer {
-    font-size: 0.5em;
-    color: grey;
+.footerContainer {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    height: auto;
 }
 
+.page-title-break{
+    border: 1px solid var(--grey);
+    white-space: pre;
+}
+
+.page-content-break{
+    border: 1px solid var(--grey);
+    white-space: pre;
+    margin-top: 3vh;
+    width: 50%;
+    justify-self: right;
+    position: absolute;
+}
+
+.page-content-list-item {
+    margin-bottom: 0.7rem;
+    text-align: left;
+}
+
+#footerText{
+    font-family: Sailec;
+    font-size: clamp(15px, 1.5vw, 25px);
+    text-decoration: none;
+    color: var(--silver);
+}
+
+#typewriteText {
+    font-family: Sentinel;
+    color: black;
+    font-size: clamp(35px, 4vw, 65px);
+    line-height: 1.15em;
+    text-decoration: none;
+    white-space: pre;
+}
 
 .highlight_box{
     display: block;
@@ -69,7 +124,7 @@ a:link{
 }
 
 #main-page-highlight.highlighted, .highlight_box{
-    background-color: yellow;
+    background-color: var(--yellow);
 }
 
 @font-face {
