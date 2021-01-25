@@ -18,9 +18,19 @@
                     <li class="page-content-list-item">I love exploring the intersection of design, programming, art, and healthcare.</li>
                     <hr class="page-content-break">
                 </ul>
-
+            </div>
+            <div>
+                <h1 class="heading-1">Current Position</h1>
+                <h2 class="heading-2">Software Developer</h2>
+                <h3>Bank of America</h3>
+                <h3>San Francisco, CA</h3>
             </div>
 
+            <footer>
+                <div class=footerContainer> 
+                    <a class="footerText" href="index.html">back</a>
+                </div>
+            </footer>
         </div>
             
              
@@ -28,22 +38,25 @@
             new TypeIt("#typewriteText", {
               strings: "I am a <a class=\"fixed-page-highlight\">programmer.<\a>",
               speed: 50,
-              lifelike: true,
+              deleteSpeed: 50,
+              lifeLike: true
+              //remove comment to make cursor dissapear
             //   afterComplete: function (step, instance) {
             //       instance.destroy();
             //   }
               })
                 .pause(500)
-                .delete(13, {delay: 500})
+                .delete(13, {delay: 700})
                 .type('an <a class=\"fixed-page-highlight\">artist.<\a>')
                 .pause(500)
-                .delete(9, {delay: 500})
+                .delete(9, {delay: 700})
                 .type(' <a class=\"fixed-page-highlight\">creator.<\a>')
                 .pause(500)
-                .delete(9, {delay: 500})
-                .type(' <a class=\"fixed-page-highlight\">life-long learner.<\a>')
+                .delete(8, {delay: 700})
+                .type('<a class=\"fixed-page-highlight\">life-long learner.<\a>')
                 .go();
         </script>
+
 
     </body>
 </html>
