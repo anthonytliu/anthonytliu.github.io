@@ -9,7 +9,7 @@ html{
 }
 
 .container{
-    width: auto;
+    width: 100%;
     height: 100%;
     padding: 0.7rem;
 }
@@ -30,37 +30,6 @@ html{
     text-decoration: none;
     color: var(--silver);
     padding: 2vh 1vw 0vh 1vw;
-}
-
-.job-heading-main{
-    font-family: Sailec;
-    font-size: clamp(35px, 1.5vw, 45px);
-    text-decoration: none;
-    color: var(--silver);
-    font-style: bold;
-    font-weight: 300;
-}
-
-.job-heading-secondary{
-    font-family: Sailec;
-    font-size: clamp(30px, 1.5vw, 35px);
-    text-decoration: none;
-    color: var(--silver);
-    font-style: bold;
-    font-weight: 300;
-}
-
-
-.job-heading-name{
-    font-family: Sailec;
-    font-size: clamp(25px, 1.5vw, 25px);
-    text-decoration: none;
-    color: var(--black);
-    font-style: bold;
-}
-
-.job-content-list {
-   padding-left: 1vh;
 }
 
 .page-title {
@@ -84,12 +53,14 @@ html{
     background-image: linear-gradient(180deg, transparent 65%, var(--yellow) 0);
     background-size: 0% 100%;
     background-repeat: no-repeat;
-    color: black;
-    font-size: clamp(55px, 4vw, 65px);
-    line-height: 1.15em;
-    text-decoration: none;
     transition: background-size 0.4s ease-out;
-    font-family: Sentinel;
+}
+
+.highlight-underline{
+    background-image: linear-gradient(180deg, transparent 80%, var(--yellow) 0);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s ease-out;
 }
 
 .main-page-highlight:hover{
@@ -97,12 +68,26 @@ html{
     cursor: pointer;
 }
 
+.highlight-underline:hover {
+    background-size: 100% 100%;
+}
+
+.main-page-highlight.h1 {
+    color: black;
+    font-size: clamp(55px, 4vw, 65px);
+    line-height: 1.15em;
+    text-decoration: none;
+    font-family: Sentinel;
+}
+
 .footerContainer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
+    left: 0;
     width: auto;
     height: auto;
-    margin: 0.7rem;
+    margin: 1rem;
+    background: transparent;
 }
 
 .page-title-break{
@@ -136,6 +121,35 @@ html{
     font-weight: 100;
 }
 
+.job-heading-main {
+    font-family: Sailec;
+    font-size: clamp(35px, 1.5vw, 45px);
+    text-decoration: none;
+    color: var(--silver);
+    font-style: bold;
+    font-weight: 300;
+}
+
+.job-heading-secondary {
+    font-family: Sailec;
+    font-size: clamp(30px, 1.5vw, 35px);
+    text-decoration: none;
+    color: var(--silver);
+    font-style: bold;
+    font-weight: 300;
+}
+
+.highlight-underline.job {
+    font-family: Sailec;
+    font-size: clamp(25px, 1.5vw, 25px);
+    text-decoration: none;
+    color: var(--black);
+}
+
+.job-content-list {
+   padding-left: 1vh;
+}
+
 .job-content-list-item {
     margin-bottom: 1vh;
     text-align: right;
@@ -143,21 +157,20 @@ html{
     margin-top: 0px;
 }
 .job-content-list-item-year{
-    margin-top: -1vh;
     margin-bottom: 0px;
     text-align: right;
     font-style: italic;
-        font-weight: 50;
-       color: var(--darkGrey);
+    font-weight: 50;
+    color: var(--darkGrey);
     font-family: Sailec;
 }
 .job-list-item{
     margin-bottom: 3vh;
 }
 
-.footerText{
+.main-page-highlight.footerText{
     font-family: Sailec;
-    font-size: clamp(15px, 1.5vw, 25px);
+    font-size: clamp(25px, 1.5vw, 35px);
     text-decoration: none;
     color: var(--silver);main-page-highlight
 }
