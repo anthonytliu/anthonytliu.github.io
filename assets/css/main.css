@@ -32,7 +32,7 @@ html{
     padding: 2vh 1vw 0vh 1vw;
 }
 
-.job-heading{
+.job-heading-main{
     font-family: Sailec;
     font-size: clamp(35px, 1.5vw, 45px);
     text-decoration: none;
@@ -41,7 +41,17 @@ html{
     font-weight: 300;
 }
 
-.heading-2{
+.job-heading-secondary{
+    font-family: Sailec;
+    font-size: clamp(30px, 1.5vw, 35px);
+    text-decoration: none;
+    color: var(--silver);
+    font-style: bold;
+    font-weight: 300;
+}
+
+
+.job-heading-name{
     font-family: Sailec;
     font-size: clamp(25px, 1.5vw, 25px);
     text-decoration: none;
@@ -115,7 +125,7 @@ html{
     list-style: none;
     padding: 0.7vh 0.7vw 0.7vh 0.7vw;
     width: 50%;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 
 .page-content-list-item {
@@ -123,6 +133,7 @@ html{
     text-align: left;
     font-style: italic;
     font-family: Sailec;
+    font-weight: 100;
 }
 
 .job-content-list-item {
@@ -139,6 +150,9 @@ html{
         font-weight: 50;
        color: var(--darkGrey);
     font-family: Sailec;
+}
+.job-list-item{
+    margin-bottom: 3vh;
 }
 
 .footerText{
