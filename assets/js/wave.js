@@ -21,7 +21,7 @@ function step7 (phase, amplitude) {
   }
   
   function setup () {
-    createCanvas(windowWidth, windowHeight/3);
+    createCanvas(windowWidth, windowHeight/4);
     console.log(windowHeight);
     noiseSeed(random(100));
     mouseY = (height-200)*(height-668);
@@ -30,7 +30,7 @@ function step7 (phase, amplitude) {
   }
   
   function windowResized () {
-    resizeCanvas(windowWidth, windowHeight/2);
+    resizeCanvas(windowWidth, windowHeight/4);
     noiseSeed(random(100));
     draw();
   }

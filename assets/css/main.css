@@ -62,7 +62,7 @@ html{
     background-size: 0% 100%;
     background-repeat: no-repeat;
     color: black;
-    font-size: clamp(35px, 4vw, 65px);
+    font-size: clamp(55px, 4vw, 65px);
     line-height: 1.15em;
     text-decoration: none;
     transition: background-size 0.4s ease-out;
@@ -114,7 +114,7 @@ html{
     font-family: Sailec;
     font-size: clamp(15px, 1.5vw, 25px);
     text-decoration: none;
-    color: var(--silver);
+    color: var(--silver);main-page-highlight
 }
 
 #typewriteText {
