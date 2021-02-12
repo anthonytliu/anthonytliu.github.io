@@ -216,6 +216,37 @@ canvas {
     position: relative;
 }
 
+.sticky {
+    position: sticky;
+    top: 1vh;
+}
+
+.box {
+    height: 100vh;
+    background-color: transparent;
+    padding: 1vh 0.7vw 0.7vh 0.7vw;
+    width: 50%;
+
+}
+
+#box2 {
+    height: 100vh;
+    background-color: red;
+    width: 100%;
+}
+
+#projects-header {
+  position: relative;
+      width: max-content;
+      padding: 0.7vh 0.7vw 0.7vh 0.7vw;
+       font-family: Sailec;
+        font-size: clamp(35px, 1.5vw, 45px);
+        text-decoration: none;
+        color: var(--silver);
+        font-style: bold;
+        font-weight: 300;
+}
+
 main {
     overflow-x: hidden;
     display:flex;
