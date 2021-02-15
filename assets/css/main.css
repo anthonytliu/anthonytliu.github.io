@@ -72,14 +72,6 @@ html{
     background-size: 100% 100%;
 }
 
-.main-page-highlight.h1 {
-    color: black;
-    font-size: clamp(55px, 4vw, 65px);
-    line-height: 1.15em;
-    text-decoration: none;
-    font-family: Sentinel;
-}
-
 .footerContainer {
     position: fixed;
     bottom: 0;
@@ -139,6 +131,10 @@ html{
     font-weight: 300;
 }
 
+.project-dates {
+    color: var(--darkGrey)
+}
+
 .highlight-underline.job {
     font-family: Sailec;
     font-size: clamp(25px, 1.5vw, 25px);
@@ -156,6 +152,7 @@ html{
     font-family: Sailec;
     margin-top: 0px;
 }
+
 .job-content-list-item-year{
     margin-bottom: 0px;
     text-align: right;
@@ -201,16 +198,6 @@ canvas {
     touch-action: none;  
 }
 
-@font-face {
-    src: url("fonts/FontsFree-Net-Sentinel-Medium.ttf");
-    font-family: Sentinel;
-}
-
-@font-face {
-    src: url("fonts/SailecRegular.ttf");
-    font-family: Sailec;
-}
-
 .animationWave{
     display: flex;
     position: relative;
@@ -218,12 +205,12 @@ canvas {
 
 .sticky {
     position: sticky;
-    top: 1vh;
 }
 
 .box {
     background-color: transparent;
-    padding: 1vh 0.7vw 0.7vh 0.7vw;
+    padding: 0vh 0.7vw 0.7vh 0.7vw;
+    top: 0;
     width: 50%;
 
 }
@@ -231,9 +218,9 @@ canvas {
 .grid-Container {
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: repeat(4, 40%);
+    grid-template-columns: repeat(4, 50%);
     /* change to repeat(x, y) for the number of rows needed */
-    grid-template-rows: repeat(1, 25vw);
+    grid-template-rows: repeat(2, 25vw);
     width: 100%;
 }
 
@@ -266,26 +253,22 @@ canvas {
 
 .project-photo {
     width: 100%;
-    height: 95%;
+    height: 100%;
     background: white;
     object-fit: cover;
     overflow: hidden;
 }
 
-#box2 {
-    height: 100vh;
-    background-color: red;
-    width: 100%;
-}
-
 #projects-header {
     position: relative;
     width: max-content;
-    padding: 0.7vh 0.7vw 0.7vh 0.7vw;
-    font-family: Sailec;
-    font-size: clamp(35px, 1.5vw, 45px);
+    padding: 0vh 0.7vw 0vh 0.7vw;
+    top: 0;
+    margin-top: 0;
+    font-family: Sentinel;
+    font-size: clamp(55px, 4vw, 65px);
     text-decoration: none;
-    color: var(--silver);
+    color: black;
     font-style: bold;
     font-weight: 300;
 }
@@ -294,4 +277,14 @@ main {
     overflow-x: hidden;
     display:flex;
     background: transparent;
+}
+
+@font-face {
+    src: url("fonts/FontsFree-Net-Sentinel-Medium.ttf");
+    font-family: Sentinel;
+}
+
+@font-face {
+    src: url("fonts/SailecRegular.ttf");
+    font-family: Sailec;
 }
