@@ -26,7 +26,7 @@ html{
 
 #nameHeader {
     font-family: Sailec;
-    font-size: clamp(15px, 1.5vw, 45px);
+    font-size: clamp(25px, 1.5vw, 45px);
     text-decoration: none;
     color: var(--silver);
     padding: 2vh 1vw 0vh 1vw;
@@ -173,6 +173,15 @@ html{
 }
 
 #typewriteText {
+    font-family: Sentinel;
+    color: black;
+    font-size: clamp(55px, 4vw, 65px);
+    line-height: 1.15em;
+    text-decoration: none;
+    white-space: pre;
+}
+
+.main-page-text {
     font-family: Sentinel;
     color: black;
     font-size: clamp(55px, 4vw, 65px);
