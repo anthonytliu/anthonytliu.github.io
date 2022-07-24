@@ -3,6 +3,7 @@ $(document).ready(function(){
     $('#footer-go-back').on("click", function(){
         window.history.back();
     });
+    
     // $('#main-page-highlight').on("mouseenter", function() {
     //     console.log("mouse entered");
     //     var toHighlight = $('#main-page-highlight');

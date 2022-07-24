@@ -72,16 +72,6 @@ html{
     background-size: 100% 100%;
 }
 
-.footerc {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    margin: 1rem;
-    background: transparent;
-}
-
 .page-title-break{
     border: 1px solid var(--grey);
     white-space: pre;
@@ -165,6 +155,10 @@ html{
     margin-bottom: 3vh;
 }
 
+.footerContainer{
+    margin-left: 1vw;
+}
+
 .main-page-highlight.footerText{
     font-family: Sailec;
     font-size: clamp(25px, 1.5vw, 35px);
@@ -235,7 +229,6 @@ canvas {
 .flex-column {
     display: flex;
     flex-direction: column;
-    outline: #4CAF50 solid 10px;
     margin: 1vw;
 }
 
@@ -244,7 +237,7 @@ canvas {
     flex-direction: row;   
     justify-content: center;
     align-content: flex-start;
-    margin-top: 10vh;
+    margin-top: 1vw;
 }
 
 .project-column-image {
@@ -284,6 +277,12 @@ canvas {
     background: white;
     object-fit: cover;
     overflow: hidden;
+}
+
+.project-display {
+    object-fit: contain;
+    width: 30vw;
+    margin-bottom: 2vh;
 }
 
 #projects-header {
