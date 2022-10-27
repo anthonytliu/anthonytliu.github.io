@@ -4,26 +4,34 @@
     --yellow: #ffe733;
     --darkGrey: #4d4d4d;
 }
-html{
+
+html {
     font-size: 100%;
 }
 
-.c{
+.c {
     width: 100%;
     height: 100%;
     padding: 0.7rem;
 }
 
-.navItem{
+.logo-photo {
+    max-width: 5rem;
+    max-height: 5rem;
+    width: auto;
+    height: auto;
+}
+
+.navItem {
     margin: 1rem
 }
 
-.headerc{
+.headerc {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
 }
 
-.navc{
+.navc {
     justify-content: center;
     padding: 1vh 4vw 2vh 4vw;
 }
@@ -36,13 +44,7 @@ html{
     padding: 2vh 1vw 0vh 1vw;
 }
 
-.page-title {
-    position: relative;
-    width: max-content;
-    padding: 0.7vh 0.7vw 0.7vh 0.7vw;
-}
-
-.fixed-page-highlight{
+.fixed-page-highlight {
     background-image: linear-gradient(180deg, transparent 65%, var(--yellow) 0);
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -53,21 +55,21 @@ html{
     font-family: Sentinel;
 }
 
-.main-page-highlight{
+.main-page-highlight {
     background-image: linear-gradient(180deg, transparent 65%, var(--yellow) 0);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     transition: background-size 0.4s ease-out;
 }
 
-.highlight-underline{
+.highlight-underline {
     background-image: linear-gradient(180deg, transparent 80%, var(--yellow) 0);
     background-size: 0% 100%;
     background-repeat: no-repeat;
     transition: background-size 0.4s ease-out;
 }
 
-.main-page-highlight:hover{
+.main-page-highlight:hover {
     background-size: 100% 100%;
     cursor: pointer;
 }
@@ -76,12 +78,7 @@ html{
     background-size: 100% 100%;
 }
 
-.page-title-break{
-    border: 1px solid var(--grey);
-    white-space: pre;
-}
-
-.page-content-break{
+.page-content-break {
     border: 1px solid var(--grey);
     white-space: pre;
     margin-top: 3vh;
@@ -105,6 +102,14 @@ html{
     font-style: italic;
     font-family: Sailec;
     font-weight: 100;
+}
+
+.navbar-heading {
+    font-family: Univers;
+    font-size: clamp(20px, 1.5vw, 35px);
+    text-decoration: none;
+    color: var(--darkGrey);
+    font-weight: 200;
 }
 
 .job-heading-main {
@@ -137,7 +142,7 @@ html{
 }
 
 .job-content-list {
-   padding-left: 1vh;
+    padding-left: 1vh;
 }
 
 .job-content-list-item {
@@ -147,7 +152,7 @@ html{
     margin-top: 0px;
 }
 
-.job-content-list-item-year{
+.job-content-list-item-year {
     margin-bottom: 0px;
     text-align: right;
     font-style: italic;
@@ -155,15 +160,16 @@ html{
     color: var(--darkGrey);
     font-family: Sailec;
 }
-.job-list-item{
+
+.job-list-item {
     margin-bottom: 3vh;
 }
 
-.footerContainer{
+.footerContainer {
     margin-left: 1vw;
 }
 
-.main-page-highlight.footerText{
+.main-page-highlight.footerText {
     font-family: Sailec;
     font-size: clamp(25px, 1.5vw, 35px);
     text-decoration: none;
@@ -188,24 +194,27 @@ html{
     white-space: pre;
 }
 
-.highlight_box{
+.highlight_box {
     display: block;
     position: absolute;
-    top: 0; bottom: 0; left: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
     z-index: -1;
-    
+
 }
 
-#main-page-highlight.highlighted, .highlight_box{
+#main-page-highlight.highlighted,
+.highlight_box {
     background-color: var(--yellow);
 }
 
 canvas {
     margin: auto;
-    touch-action: none;  
+    touch-action: none;
 }
 
-.animationWave{
+.animationWave {
     display: flex;
     position: relative;
 }
@@ -214,42 +223,84 @@ canvas {
     position: sticky;
 }
 
-.box {
+.title-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: transparent;
-    padding: 0vh 0.7vw 0vh 0.7vw;
+    margin: 1.5vh 2vw 1.5vh 0.7vw;
     top: 0;
-    width: 50%;
-
 }
 
 .flex-row {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: flex-start;
+
 }
 
 .flex-column {
     display: flex;
     flex-direction: column;
-    margin: 1vw;
+    margin: 0.5vw;
+}
+
+ul {
+    list-style: none;
+}
+
+.image-gallery-container {
+}
+
+.project-item{
+    min-width: 250px;
+    max-width: 40vw;
+    width: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 1.5vh;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 70vw;
+}
+
+.image-gallery > li {
+    flex: 1 1 auto;
+    /* or flex: auto; */
+    height: 400px;
+    cursor: pointer;
+    position: relative;
+}
+
+.image-gallery::after {
+    content: "";
+    flex-grow: 999;
+}
+
+.image-gallery li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
 }
 
 .project-row {
-    display:flex;
-    flex-direction: row;   
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-content: flex-start;
-    margin-top: 1vw;
-}
-
-.project-column-image {
-    width: 60vw;
 }
 
 .project-column-text {
-    width: 30vw;
+    width: 35vw;
     padding-left: 1vw;
     padding-right: 1vw;
     padding-bottom: 1vh;
@@ -261,26 +312,34 @@ canvas {
     font-family: Sailec;
     font-weight: 100;
     color: black;
+    font-size: clamp(16px, 18px, 22px)
 }
 
 .overlay {
-  top: -100%;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  transition: .4s ease;
+    top: -100%;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .4s ease;
 }
 
 .overlay:hover {
-  background-color: var(--grey);
+    background-color: var(--grey);
 }
 
 .project-photo {
-    width: 30vw;
-    height: 30vw;
+    max-width: 20vw;
+    max-height: 20vw;
+    min-width: 20vw;
+    min-height: 20vw;
+    width: auto;
+    height: auto;
     background: white;
     object-fit: cover;
-    overflow: hidden;
+    overflow: visible;
+    border-radius: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-display {
@@ -304,28 +363,39 @@ canvas {
     font-weight: 300;
 }
 
-#project-page-header{
+#project-page-header {
     position: relative;
-    width: max-content;
+    width: auto;
     top: 0;
     margin-top: 2vh;
     margin-bottom: 1vh;
-    font-family: Sentinel;
-    font-size: 3em;
+    font-family: Univers;
+    font-size: 2.5em;
     text-decoration: none;
     color: black;
-    font-style: bold;
-    font-weight: 300;
+    font-weight: 200;
+    overflow-wrap: break-word; 
 }
 
-#project-page-text{
+#project-page-text {
     font-family: Helvetica;
     font-weight: 100;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+}
+
+#project-date-text{
+    font-family: Helvetica;
+    font-style: italic;
+    font-weight: 500;
+    overflow-wrap: break-word; 
+    color: var(--darkGrey);
+    margin-top: 0vh;
 }
 
 main {
     overflow-x: hidden;
-    display:flex;
+    display: flex;
     background: transparent;
 }
 
@@ -340,7 +410,7 @@ main {
 }
 
 
-@font-face{
+@font-face {
     src: url("fonts/UniversLTStd.otf");
     font-family: Univers;
 }
