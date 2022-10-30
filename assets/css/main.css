@@ -297,6 +297,15 @@ ul {
     position: relative;
 }
 
+@media (min-width:480px) {
+    .image-gallery {
+        width: 50vw;
+    }
+    .project-column-text {
+        width: 50vw;
+    }
+}
+
 .image-gallery {
     display: flex;
     flex-wrap: wrap;
