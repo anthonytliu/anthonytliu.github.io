@@ -183,13 +183,34 @@ html {
     .image-gallery>li {
         flex: 1 1 auto;
         /* or flex: auto; */
-        height: 400px;
+        min-height: 400px;
+        min-width: 400px;
+        max-width: 800px;
+        width: auto;
+        height: auto;
         cursor: pointer;
         position: relative;
     }
 
     ul {
         list-style: none;
+    }
+
+    .project-column-text {
+        width: 35vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        padding-bottom: 1vh;
+    }
+
+
+    .flex-column {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5vw;
+    }
+    .project-text-mobile {
+        display: none;
     }
 }
 
@@ -280,6 +301,20 @@ html {
     ul {
         list-style: none;
         padding-inline-start: 0px;
+    }
+
+    .project-column-text {
+        display: none;
+    }
+
+    .flex-column {
+        display: none;
+    }
+    .project-text-mobile {
+        display: flex;
+        flex-direction: column;
+        padding-left: 1em;
+        padding-right: 1em;
     }
 }
 
@@ -428,12 +463,6 @@ canvas {
     align-content: flex-start;
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-    margin: 0.5vw;
-}
-
 .image-gallery-container {}
 
 .project-item:hover .project-overlay {
@@ -451,13 +480,6 @@ canvas {
 .image-gallery::after {
     content: "";
     flex-grow: 999;
-}
-
-.project-column-text {
-    width: 35vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    padding-bottom: 1vh;
 }
 
 .project-name {
