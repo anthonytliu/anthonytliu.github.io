@@ -209,8 +209,20 @@ html {
         flex-direction: column;
         margin: 0.5vw;
     }
+
     .project-text-mobile {
         display: none;
+    }
+
+    #about-page-content {
+        margin-left: 2vw;
+        text-align: left;
+        font-weight: 100;
+        font-family: Sailec;
+        overflow-wrap: break-word;
+        font-size: clamp(20px, 1.5em, 35px);
+        line-height: 1.4;
+        width: 40vw;
     }
 }
 
@@ -310,20 +322,28 @@ html {
     .flex-column {
         display: none;
     }
+
     .project-text-mobile {
         display: flex;
         flex-direction: column;
         padding-left: 1em;
         padding-right: 1em;
     }
+
+    #about-page-content {
+        margin-left: 2vw;
+        text-align: left;
+        font-weight: 100;
+        font-family: Sailec;
+        overflow-wrap: break-word;
+        font-size: clamp(20px, 1.5em, 35px);
+        line-height: 1.4;
+        width: 80vw;
+    }
 }
 
-.page-content-list-item {
-    margin-bottom: 1vh;
-    text-align: left;
-    font-style: italic;
-    font-family: Sailec;
-    font-weight: 100;
+a:link {
+    color: --yellow;
 }
 
 .navbar-heading {

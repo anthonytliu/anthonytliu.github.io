@@ -1,33 +1,41 @@
 <!DOCTYPE HTML>
 <html>
-    <head>
-        <link rel="stylesheet" href="assets/css/main.css" />
-        <!-- <script type="text/javascript" src="assets/js/main.js"></script>
+
+<head>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- <script type="text/javascript" src="assets/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script> -->
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    </head>
-    <body>
-        <div class="title-row">
-            <a href="../index.html">
-                <img class="logo-photo" src="/assets\img\logo.png" />
-            </a>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<style>
+    a:link { color: #fada5e; }
+    a:visited { color: #4d4d4d; } 
+</style>
+<body>
+    <div class="title-row">
+        <a href="../index.html">
+            <img class="logo-photo" src="/assets\img\logo.png" />
+        </a>
+    </div>
+    <div class="container">
+        <div class="page-title">
+            <a id="typewriteText"></a>
+            <!-- <hr class="page-title-break"> -->
         </div>
-        <div class="container">
-            <div class="page-title">
-                <a id="typewriteText"></a>
-                <!-- <hr class="page-title-break"> -->
-            </div>
-            <div>
-                <ul class="page-content-list">
-                    <h3 class="page-content-list-item">My name is Anthony Liu and I work as a software developer in the Bay Area.
-                        Much of my free time is spent creating physical products.
-                        I enjoy thinking up solutions to miscellaneous problems that pertain to my hobbies.
-                        I am always eager for an interesting design challenge.
-                        You can reach me by <a href="https://www.google.com">email</a> or on <a href="google.com">Instagram</a>.
-                    </h3>
-                </ul>
-            </div>
-            <!-- <div>
+        <div>
+            <h3 id="about-page-content">
+                My name is Anthony Liu and I work as a software developer in the Bay
+                Area.
+                Much of my free time is spent creating physical products.
+                I enjoy thinking up solutions to miscellaneous problems that pertain to my hobbies.
+                I am eager for an interesting design challenge.
+                You can reach me by <a href="mailto:anthony.aliu.liu@gmail.com">email</a>.
+                <br><br>
+                I recently started a <a href="https://www.aframecycles.com">rapid protyping bicycle component
+                    venture.</a>
+            </h3>
+        </div>
+        <!-- <div>
                 <ul class="page-content-list">
                     <h1 class="job-heading-main">Current Position</h1>
                     <li>
@@ -60,32 +68,33 @@
                     </li>
                 </ul>
             </div> -->
-        </div>
-            
-             
-        <script>
-            new TypeIt("#typewriteText", {
-              strings: "I am a <a class=\"fixed-page-highlight\">programmer.<\a>",
-              speed: 50,
-              deleteSpeed: 50,
-              lifeLike: true
-              //remove comment to make cursor dissapear
+    </div>
+
+
+    <script>
+        new TypeIt("#typewriteText", {
+            strings: "I am a <a class=\"fixed-page-highlight\">programmer.<\a>",
+            speed: 50,
+            deleteSpeed: 50,
+            lifeLike: true
+            //remove comment to make cursor dissapear
             //   afterComplete: function (step, instance) {
             //       instance.destroy();
             //   }
-              })
-                .pause(500)
-                .delete(13, {delay: 700})
-                .type('an <a class=\"fixed-page-highlight\">artist.<\a>')
-                .pause(500)
-                .delete(9, {delay: 700})
-                .type(' <a class=\"fixed-page-highlight\">creator.<\a>')
-                .pause(500)
-                .delete(8, {delay: 700})
-                .type('<a class=\"fixed-page-highlight\">life-long learner.<\a>')
-                .go();
-        </script>
+        })
+            .pause(500)
+            .delete(13, { delay: 700 })
+            .type('an <a class=\"fixed-page-highlight\">artist.<\a>')
+            .pause(500)
+            .delete(9, { delay: 700 })
+            .type(' <a class=\"fixed-page-highlight\">creator.<\a>')
+            .pause(500)
+            .delete(8, { delay: 700 })
+            .type('<a class=\"fixed-page-highlight\">life-long learner.<\a>')
+            .go();
+    </script>
 
 
-    </body>
+</body>
+
 </html>
