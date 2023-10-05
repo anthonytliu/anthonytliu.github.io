@@ -259,7 +259,7 @@ html {
         height: 50vw; */
         background: white;
         object-fit: cover;
-        overflow: visible;
+        overflow: hidden;
         border-radius: 25px;
         margin-left: auto;
         margin-right: auto;
