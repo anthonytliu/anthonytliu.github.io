@@ -131,7 +131,7 @@ html {
         height: 100%;
         background: white;
         object-fit: cover;
-        overflow: visible;
+        overflow: hidden;
         border-radius: 25px;
         margin-left: auto;
         margin-right: auto;
@@ -250,19 +250,6 @@ html {
         margin-bottom: 2vh;
         position: relative;
         border-radius: 25px;
-    }
-
-    .project-photo {
-        width: 100%;
-        height: 100%;
-        /* width: 50vw;
-        height: 50vw; */
-        background: white;
-        object-fit: cover;
-        overflow: hidden;
-        border-radius: 25px;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .project-overlay {
