@@ -118,7 +118,7 @@ html {
         width: auto;
         justify-content: center;
         display: flex;
-        margin-bottom: 2vh;
+        margin-bottom: 1.75vw;
         position: relative;
     }
 
@@ -132,7 +132,7 @@ html {
         background: white;
         object-fit: cover;
         overflow: hidden;
-        border-radius: 25px;
+        border-radius: 15px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -157,7 +157,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 25px;
+        border-radius: 15px;
         text-align: center;
         font-style: italic;
         font-family: Sailec;
@@ -249,7 +249,7 @@ html {
         display: flex;
         margin-bottom: 2vh;
         position: relative;
-        border-radius: 25px;
+        border-radius: 15px;
     }
 
     .project-photo {
@@ -260,7 +260,7 @@ html {
         background: white;
         object-fit: cover;
         overflow: hidden;
-        border-radius: 25px;
+        border-radius: 15px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -281,7 +281,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        border-radius: 25px;
+        border-radius: 15px;
         text-align: center;
         font-style: italic;
         font-family: Sailec;
@@ -495,7 +495,7 @@ canvas {
     width: 100%;
     height: 100%;
     vertical-align: middle;
-    border-radius: 5px;
+    border-radius: 10px;
 }
 
 .image-gallery::after {
